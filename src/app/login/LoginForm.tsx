@@ -44,11 +44,6 @@ export default function LoginForm({ erroInicial }: { erroInicial?: string }) {
   return (
     <>
       <h1>{titulo}</h1>
-      <p className="muted" style={{ marginBottom: 20 }}>
-        {modo === "recuperar"
-          ? "Informe seu e-mail para receber o link."
-          : "Acesso restrito à família e à Silvia."}
-      </p>
 
       {modo !== "recuperar" && (
         <>
